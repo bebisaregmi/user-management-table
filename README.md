@@ -1,12 +1,66 @@
-# React + Vite
+# React Table Users Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application featuring a sortable, searchable user management table built with React Table v8, React Query, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Advanced Table Functionality**: Built with `@tanstack/react-table` for powerful table features
+- **Selective Sorting**: Sort by Name and Email columns only with three-state sorting (ascending → descending → none)
+- **Real-time Search**: Search users by name, email, or company name with instant filtering
+- **Smart Pagination**: Custom pagination with configurable page sizes
+- **Loading States**: Elegant loading spinners and error handling
+- **Responsive Design**: Mobile-friendly table with horizontal scrolling
+- **Data Fetching**: Efficient API calls with React Query caching
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18** - Modern React with hooks
+- **@tanstack/react-table** - Headless table library for sorting and pagination
+- **@tanstack/react-query** - Server state management and caching
+- **Axios** - HTTP client for API requests
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Icons** - Icon library (Font Awesome icons)
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/bebisaregmi/user-management-table.git
+   cd react-table-users-dashboard
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Required packages** (if not already installed)
+   ```bash
+   npm install @tanstack/react-query @tanstack/react-table axios react-icons react-router-dom
+   ```
+ "@tailwindcss/vite": "^4.1.11",
+    
+## 🏃‍♂️ Running the Project
+
+```bash
+npm start
+# or
+yarn start
+```
+
+The application will open at `http://localhost:5173`
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   └── Pagination.jsx     # Custom pagination component
+├── pages/
+│   └── Users.jsx     # User table page
+├── assets/
+│   └── data-not-found.png # No data illustration
+└── App.jsx
+```

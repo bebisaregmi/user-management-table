@@ -15,7 +15,6 @@ A modern React application featuring a sortable, searchable user management tabl
 ## 🛠️ Tech Stack
 
 - **React 18** - Modern React with hooks
-- **@tanstack/react-table** - Headless table library for sorting and pagination
 - **@tanstack/react-query** - Server state management and caching
 - **Axios** - HTTP client for API requests
 - **Tailwind CSS** - Utility-first CSS framework
